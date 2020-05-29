@@ -1,0 +1,46 @@
+
+.section--about {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__container {
+        max-width: 430px;
+        margin: auto auto;
+        
+    }
+
+    &__heading {
+        font-size: 1.6em;
+        text-align: center;
+        padding-top: $spacer;
+
+        @include mq(big) {
+            padding-top: 3.5em;
+            text-align: left;
+            margin-left: 2.2em;
+        }
+    }
+
+    &__text {
+        font-weight: $fw-light;
+        line-height: 1.556;
+        text-align: center;
+        padding: 0 $spacer*2 $spacer*2;
+
+        @include mq(big) {
+            text-align: left;
+            margin-left: 1.4em;
+        }
+    }
+
+
+    &__image {
+        display: block;
+    }
+
+    @include mq(big) {
+        @include grid(2);
+    }
+}
+

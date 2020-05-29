@@ -1,0 +1,43 @@
+
+.section--social {
+
+    text-align: center;
+    padding: $spacer*3;
+
+    &__title {
+        line-height: 1;
+        margin-bottom: -0.4em;
+    }
+
+    &__links {
+        a {
+            padding-right: 0.6em;
+
+            &:first-child {
+                padding-left: 0.6em;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 7.2em;
+    }
+
+    &__text {
+        color: $lightgreen;
+        font-size: 1.3em;
+        font-weight: $fw-normal;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    &__credit {
+        font-size: 2.4em;
+        line-height: 1.143;
+        padding: 0.5em 0 1.5em;
+    }
+}
+
+.social-svg {
+    width: 3.5em;
+}

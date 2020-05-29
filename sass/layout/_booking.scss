@@ -1,0 +1,65 @@
+
+.section--booking {
+
+    text-align: center;
+    padding-top: $spacer*3;
+
+    &__title {
+        font-size: 4.5em;
+        color: $gray;
+    }
+
+    &__container {
+
+        font-weight: $fw-bold;
+        padding: $spacer*2 $spacer $spacer*4;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        form {
+            @include mq(big) {
+                @include grid;
+            }
+        }
+    }
+
+    &__submit {
+        grid-column-start: 2;
+    }
+}
+
+input,
+select {
+    font-family: $ff-sans;
+    background: transparent;
+    color: $gray;
+    display: block;
+    margin: 0 auto;
+    text-align-last: center;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    margin-bottom: $spacer*2;
+    margin-top: $spacer/2;
+    width: 15em;
+    height: 2em;
+
+    &:focus {
+        outline: none;
+        border: 2px solid $lightgreen;
+        color: $mediumgreen;
+        background: transparent;
+    }
+
+    option {
+        color: black;
+        
+    }
+}
+
+input[type="submit"] {
+    margin-top: $spacer*4;
+    font-weight: $fw-bold;
+    width: 15em;
+    
+}
+

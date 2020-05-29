@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap");
+@font-face {
+  font-family: 'GoodDog';
+  src: url("../fonts/good_dog_cool/gooddc__-webfont.woff2") format("woff2"), url("../fonts/good_dog_cool/gooddc__-webfont.woff") format("woff"); }
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #e7e7e7;
+  font-weight: 300;
+  text-align: right;
+  background: url("/images/body-bg.png");
+  background-size: cover; }
+
+.section__title {
+  font-family: "GoodDog", cursive;
+  font-size: 2.8em;
+  color: #afc67b;
+  line-height: 1.2; }
+.section__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4em;
+  color: #e7e7e7;
+  line-height: 1;
+  font-weight: 300; }
+.section__heading {
+  margin-bottom: 1em; }
+
+h1,
+h2,
+h3,
+p,
+section {
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-family: "GoodDog", cursive;
+  color: #afc67b; }
+
+a {
+  text-decoration: none;
+  color: #afc67b; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.beans {
+  width: 40px; }
+
+.nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 1em;
+  padding-top: 1em; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; }
+  @media only screen and (min-width: 860px) {
+    ul {
+      margin-left: 38%;
+      font-size: 1.8em; } }
+
+.section--home {
+  height: 600px;
+  padding-top: 5em;
+  padding-right: 10%; }
+  .section--home .logo {
+    width: 8em;
+    margin-bottom: 60px;
+    margin-top: 4em; }
+  .section--home__title {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #afc67b;
+    line-height: 1.2; }
+    @media only screen and (min-width: 860px) {
+      .section--home__title {
+        font-size: 2.6em; } }
+  .section--home__subtitle {
+    font-size: 2.7em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: #afc67b;
+    margin-bottom: 100px; }
+    @media only screen and (min-width: 860px) {
+      .section--home__subtitle {
+        font-size: 3.5em;
+        line-height: 1; } }
+  .section--home__button {
+    font-size: 1.6em;
+    background-color: rgba(78, 83, 66, 0.6);
+    padding: 0.3em 0.4em; }
+    @media only screen and (min-width: 860px) {
+      .section--home__button {
+        font-size: 2em; } }
+  @media only screen and (min-width: 860px) {
+    .section--home__container {
+      text-align: left;
+      padding-left: 65%; } }
+  .section--home::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    opacity: 0.5;
+    background-image: url("../images/home-bg.png");
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+    background-size: cover; }
+
+.section--about {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .section--about__container {
+    max-width: 430px;
+    margin: auto auto; }
+  .section--about__heading {
+    font-size: 1.6em;
+    text-align: center;
+    padding-top: 1em; }
+    @media only screen and (min-width: 860px) {
+      .section--about__heading {
+        padding-top: 3.5em;
+        text-align: left;
+        margin-left: 2.2em; } }
+  .section--about__text {
+    font-weight: 300;
+    line-height: 1.556;
+    text-align: center;
+    padding: 0 2em 2em; }
+    @media only screen and (min-width: 860px) {
+      .section--about__text {
+        text-align: left;
+        margin-left: 1.4em; } }
+  .section--about__image {
+    display: block; }
+  @media only screen and (min-width: 860px) {
+    .section--about {
+      display: grid;
+      grid: auto-flow/repeat(2, 1fr); } }
+
+.section--facts {
+  background-color: rgba(175, 198, 123, 0.15);
+  padding: 3em 2em; }
+
+.facts {
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 860px) {
+    .facts {
+      display: flex;
+      justify-content: space-evenly; } }
+
+.fact {
+  text-align: center;
+  max-width: 240px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 860px) {
+    .fact {
+      text-align: left; } }
+  .fact h3 {
+    font-size: 1.7em;
+    color: #e7e7e7;
+    line-height: 1.33;
+    padding: 0.5em 0 1em; }
+  .fact p {
+    line-height: 1.5; }
+  .fact:not(:first-child) {
+    padding-top: 3em; }
+    @media only screen and (min-width: 860px) {
+      .fact:not(:first-child) {
+        padding-top: 0; } }
+
+.beans__1 {
+  width: 1.3em; }
+.beans__2 {
+  width: 2.8em; }
+.beans__3 {
+  width: 4.4em; }
+
+.meal {
+  padding: 1em 3em 3em; }
+  .meal h3 {
+    font-size: 1.5em;
+    line-height: 1.2; }
+  .meal__text {
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.2;
+    margin: 1em auto;
+    max-width: 14em; }
+  .meal__price {
+    font-family: "GoodDog", cursive;
+    font-size: 1.6em;
+    line-height: 1.2; }
+  @media only screen and (min-width: 860px) {
+    .meal {
+      padding: 0 1em;
+      margin: auto 0; } }
+
+.section--menu {
+  text-align: center;
+  background-color: rgba(175, 198, 123, 0.15);
+  margin-top: 7em;
+  padding-top: 3em; }
+  @media only screen and (min-width: 860px) {
+    .section--menu {
+      margin: 5em 8em; } }
+  .section--menu__image {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.meals {
+  padding: 3em;
+  max-width: 1000px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 860px) {
+    .meals {
+      display: grid;
+      grid: auto-flow/repeat(4, 1fr);
+      padding: 3em 0 0; } }
+
+.move-left-mid {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.move-right-mid {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.section--info {
+  padding: 3em;
+  margin-top: 7em;
+  text-align: center;
+  background-color: rgba(175, 198, 123, 0.15); }
+  .section--info__heading {
+    font-size: 2.3em;
+    margin-bottom: 1em; }
+  .section--info__text {
+    font-size: 1em;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0 auto 2em;
+    max-width: 500px; }
+
+.beans__4 {
+  width: 4em; }
+
+.section--discover {
+  position: relative;
+  overflow: hidden; }
+  .section--discover::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1950px;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url("../images/menu-bg.png");
+    background-repeat: no-repeat;
+    background-position: 55% 0;
+    background-size: cover; }
+  .section--discover__container {
+    background-color: rgba(78, 83, 66, 0.9);
+    padding: 3em;
+    margin-top: 18em;
+    margin-bottom: 14em;
+    text-align: center; }
+  .section--discover__title {
+    color: #e7e7e7; }
+  .section--discover__meal {
+    padding-top: 3em; }
+    @media only screen and (min-width: 860px) {
+      .section--discover__meal {
+        display: flex; } }
+  .section--discover__meals {
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 860px) {
+      .section--discover__meals {
+        display: grid;
+        grid: auto-flow/repeat(2, 1fr); } }
+
+.meal-description h3 {
+  padding-top: 1em;
+  font-size: 1.7em;
+  color: #e7e7e7; }
+  @media only screen and (min-width: 860px) {
+    .meal-description h3 {
+      padding: 0 1em;
+      text-align: left; } }
+.meal-description p {
+  padding-top: 1em;
+  font-size: 1em;
+  max-width: 30em;
+  margin: 0 auto; }
+  @media only screen and (min-width: 860px) {
+    .meal-description p {
+      padding: 1em 1.7em 0;
+      text-align: left; } }
+
+.desc-price {
+  font-family: "GoodDog", cursive;
+  font-size: 1.6em; }
+
+.section--booking {
+  text-align: center;
+  padding-top: 3em; }
+  .section--booking__title {
+    font-size: 4.5em;
+    color: #e7e7e7; }
+  .section--booking__container {
+    font-weight: 900;
+    padding: 2em 1em 4em;
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 860px) {
+      .section--booking__container form {
+        display: grid;
+        grid: auto-flow/repeat(3, 1fr); } }
+  .section--booking__submit {
+    grid-column-start: 2; }
+
+input,
+select {
+  font-family: "Montserrat", sans-serif;
+  background: transparent;
+  color: #e7e7e7;
+  display: block;
+  margin: 0 auto;
+  text-align-last: center;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  width: 15em;
+  height: 2em; }
+  input:focus,
+  select:focus {
+    outline: none;
+    border: 2px solid #afc67b;
+    color: rgba(175, 198, 123, 0.78);
+    background: transparent; }
+  input option,
+  select option {
+    color: black; }
+
+input[type="submit"] {
+  margin-top: 4em;
+  font-weight: 900;
+  width: 15em; }
+
+.section--soloimage {
+  height: 500px;
+  position: relative; }
+  .section--soloimage::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url(../images/after-booking.png);
+    background-repeat: no-repeat;
+    background-position: 60% 0;
+    background-size: cover; }
+
+.section--newmenu {
+  text-align: center;
+  padding-top: 3em;
+  background: rgba(175, 198, 123, 0.15); }
+  .section--newmenu__container {
+    padding: 3em;
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 860px) {
+      .section--newmenu__container {
+        display: grid;
+        grid: auto-flow/repeat(3, 1fr);
+        grid-column-gap: 1em; } }
+  .section--newmenu__item {
+    max-width: 336px;
+    margin: 0 auto 3em;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+  .section--newmenu__itemtext {
+    background-color: #e7e7e7;
+    padding: 1em; }
+  .section--newmenu__date {
+    color: #555555;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    line-height: 2.357;
+    padding-bottom: 0.5em; }
+  .section--newmenu__heading {
+    color: #555555;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    padding-bottom: 0.5em; }
+  .section--newmenu p {
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 1em; }
+  .section--newmenu__link {
+    color: #555555;
+    font-weight: 900;
+    line-height: 2.357;
+    border-bottom: 5px solid #afc67b; }
+    .section--newmenu__link:hover {
+      color: #afc67b; }
+
+.section--social {
+  text-align: center;
+  padding: 3em; }
+  .section--social__title {
+    line-height: 1;
+    margin-bottom: -0.4em; }
+  .section--social__links a {
+    padding-right: 0.6em; }
+    .section--social__links a:first-child {
+      padding-left: 0.6em; }
+  .section--social__title {
+    font-size: 7.2em; }
+  .section--social__text {
+    color: #afc67b;
+    font-size: 1.3em;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto; }
+  .section--social__credit {
+    font-size: 2.4em;
+    line-height: 1.143;
+    padding: 0.5em 0 1.5em; }
+
+.social-svg {
+  width: 3.5em; }
+
+.footer {
+  background: rgba(175, 198, 123, 0.15);
+  text-align: center;
+  padding: 3em; }
+  @media only screen and (min-width: 860px) {
+    .footer {
+      display: grid;
+      grid: auto-flow/repeat(2, 1fr);
+      column-gap: 5em; } }
+  .footer__heading {
+    font-size: 2em;
+    line-height: 1.333;
+    padding-bottom: 0.5em; }
+  .footer p {
+    font-size: 1.2em;
+    line-height: 1.556;
+    font-weight: 400;
+    padding-bottom: 3em;
+    max-width: 300px;
+    margin: 0 auto; }
+  .footer__container {
+    display: flex;
+    justify-content: space-around; }
+  .footer__subheading {
+    font-size: 1.4em;
+    line-height: 1.6;
+    padding-bottom: 0.5em; }
+  .footer__link {
+    font-size: 1.3em;
+    color: #e7e7e7;
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5em;
+    text-align: left; }
+
+/*# sourceMappingURL=main.css.map */

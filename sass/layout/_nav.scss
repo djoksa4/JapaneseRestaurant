@@ -1,0 +1,31 @@
+
+.nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: $spacer;
+    padding-top: $spacer;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $ff-sans;
+    font-size: 1.3em;
+    text-align: center;
+    //positioning
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include mq (big){
+        margin-left: 38%;
+        font-size: 1.8em;
+    }
+
+}
+

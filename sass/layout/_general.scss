@@ -1,0 +1,28 @@
+//makes borders and padding included in max width
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+//removes any default margins from body
+body {
+    margin: 0;
+}
+
+//makes images responsive by default
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// //top&bottom padding on each section = 4em
+// //left&right padding on each section = $spacer
+// .section {
+//     padding: 4em $spacer;
+// }
+
+//temp
+.beans {
+    width: 40px;
+}

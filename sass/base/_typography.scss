@@ -1,0 +1,67 @@
+//font import
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;900&display=swap');
+@font-face {
+    font-family: 'GoodDog';
+    src: url('../fonts/good_dog_cool/gooddc__-webfont.woff2') format('woff2'),
+         url('../fonts/good_dog_cool/gooddc__-webfont.woff') format('woff');
+    
+}
+
+//general typo styles
+body {
+    font-family: $ff-sans;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: $gray;
+    font-weight: $fw-light;
+    text-align: right;
+    background: url('/images/body-bg.png');
+    background-size: cover;
+}
+
+.section {
+
+    &__title {
+        font-family: $ff-serif;
+        font-size: 2.8em;
+        color: $lightgreen;
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        font-family: $ff-sans;
+        font-size: 2.4em;
+        color: $gray;
+        line-height: 1;
+        font-weight: $fw-light;
+    }
+
+    &__heading {
+        margin-bottom: $spacer;
+    }
+}
+
+
+//margin and padding reset
+h1,
+h2,
+h3,
+p,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+//general h3 styles
+h3 {
+    font-family: $ff-serif;
+    color: $lightgreen;
+}
+
+//norm links
+a {
+    text-decoration: none;
+    color: $lightgreen;
+}
+

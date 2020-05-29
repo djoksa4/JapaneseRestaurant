@@ -1,0 +1,10 @@
+
+
+@font-face {
+    font-family: 'GoodDog';
+    src: url('fonts/good_dog_cool/gooddc__-webfont.woff2') format('woff2'),
+         url('fonts/good_dog_cool/gooddc__-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

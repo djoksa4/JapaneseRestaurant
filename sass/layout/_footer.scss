@@ -1,0 +1,49 @@
+
+.footer {
+
+    background: rgba($lightgreen, 0.15);
+    text-align: center;
+    padding: $spacer*3;
+
+    @include mq(big) {
+        @include grid(2) {
+            column-gap: $spacer*5;
+        }
+    }
+
+    &__heading {
+        font-size: 2em;
+        line-height: 1.333;
+        padding-bottom: $spacer/2;
+    }
+
+    p {
+       font-size: 1.2em;
+       line-height: 1.556;  
+       font-weight: $fw-normal;
+       padding-bottom: $spacer*3;
+       max-width: 300px;
+       margin: 0 auto;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    &__subheading {
+        font-size: 1.4em;
+        line-height: 1.6;
+        padding-bottom: $spacer/2;
+    }
+
+    &__link {
+        font-size: 1.3em;
+        color: $gray;
+        font-weight: $fw-light;
+        display: block;
+        padding-bottom: $spacer/2;
+        text-align: left;
+        }
+    }

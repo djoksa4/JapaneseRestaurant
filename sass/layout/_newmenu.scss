@@ -1,0 +1,70 @@
+
+.section--newmenu {
+
+    text-align: center;
+    padding-top: 3em;
+    background: rgba($lightgreen, 0.15);
+
+    //holding all the cards
+    &__container {
+        padding: 3em;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @include mq(big) {
+            @include grid {
+                grid-column-gap: $spacer;
+            }
+        }
+    }
+
+    //card
+    &__item {
+        max-width: 336px;
+        margin: 0 auto $spacer*3;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+
+
+    //card text area
+    &__itemtext {
+        background-color: $gray;
+        padding: $spacer;
+    }
+
+    //date h3
+    &__date {
+        color: $darkgray;
+        font-family: $ff-sans;
+        font-size: 0.8em;
+        line-height: 2.357;
+        padding-bottom: 0.5em;
+    }
+
+    //card main heading
+    &__heading {
+        color: $darkgray;
+        font-family: $ff-sans;
+        font-size: 1em;
+        padding-bottom: 0.5em;
+    }
+
+    //card text
+    p {
+        color: $darkgray;
+        font-weight: $fw-normal;
+        margin-bottom: $spacer;
+    }
+
+    //READ MORE
+    &__link {
+        color: $darkgray;
+        font-weight: $fw-bold;
+        line-height: 2.357;
+        border-bottom: 5px solid $lightgreen;
+        
+        &:hover {
+            color: $lightgreen;
+        }
+    }
+}

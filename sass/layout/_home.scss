@@ -1,0 +1,79 @@
+.section--home {
+    // background-image: url(../images/home-bg.png);
+    // background-size: auto;
+    // background-position: 25% 0%;
+    height: 600px;
+    padding-top: $spacer*5;
+    padding-right: 10%;
+    
+
+    .logo {
+        // display: none;
+        width: 8em;
+        margin-bottom: 60px;
+        margin-top: $spacer*4;
+    }
+
+    &__title {
+        font-size: 2em;
+        font-family: $ff-sans;
+        font-weight: $fw-normal;
+        color: $lightgreen;
+        line-height: 1.2;
+
+        @include mq (big) {
+            font-size: 2.6em;
+        }
+    }
+
+    &__subtitle {
+        font-size: 2.7em;
+        font-family: $ff-sans;
+        font-weight: $fw-bold;
+        color: $lightgreen;
+        margin-bottom: 100px;
+
+        @include mq (big) {
+            font-size: 3.5em;
+            line-height: 1;
+        }
+    }
+
+    &__button {
+        font-size: 1.6em;
+        background-color: rgba($darkgreen, 0.6);
+        padding: 0.3em 0.4em;
+
+        @include mq (big) {
+            font-size: 2em;
+        }
+    }
+
+    &__container {
+
+        @include mq (big) {
+            text-align: left;
+            padding-left: 65%;
+        }
+    }
+
+
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        z-index: -1;
+        opacity: 0.5;
+        background-image: url('../images/home-bg.png');
+        background-repeat: no-repeat;
+        background-position: 25% 0;
+        background-size: cover;
+    }
+
+
+}
+

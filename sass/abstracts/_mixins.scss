@@ -1,0 +1,23 @@
+
+//media query mixin
+@mixin mq($size) {
+    $value: map-get($breakpoints, $size);
+    @media only screen and (min-width: $value) {
+        @content;
+    }
+}
+
+//mixin that limits the width of whatever its added to
+@mixin limit-width() {
+        max-width: 450px;
+        margin: 0 auto;
+}
+
+//mixin that makes it grid and split into colums
+//autoflow makes rows as they're needed and repeat makes 3 equal columns by default (but can be changed)
+@mixin grid($cols: 3) {
+    display: grid;
+    grid: auto-flow / repeat($cols, 1fr);
+    
+    @content;
+}

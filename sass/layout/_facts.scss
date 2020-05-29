@@ -1,0 +1,65 @@
+
+.section--facts {
+    background-color: rgba($mediumgreen, 0.15);
+    padding: $spacer*3 $spacer*2;
+}
+
+.facts {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    @include mq (big) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+.fact {
+
+    text-align: center;
+    max-width: 240px;
+    margin: 0 auto;
+
+    @include mq (big) {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        color: $gray;
+        line-height: 1.33;
+        padding: $spacer/2 0 $spacer;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    &:not(:first-child) { 
+        padding-top: $spacer*3;
+
+        @include mq (big) {
+            padding-top: 0;
+        }
+    }
+
+}
+
+.beans {
+
+    &__1 {
+        width: 1.3em;
+    }
+
+    &__2 {
+        width: 2.8em;
+    }
+
+    &__3 {
+        width: 4.4em;
+    }
+}
+
+
+

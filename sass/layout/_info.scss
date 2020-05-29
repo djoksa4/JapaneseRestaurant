@@ -1,0 +1,24 @@
+
+.section--info {
+
+    padding: $spacer*3;
+    margin-top: $spacer*7;
+    text-align: center;
+    background-color: rgba($mediumgreen, 0.15);
+
+    &__heading {
+        font-size: 2.3em;
+        margin-bottom: $spacer;
+    }
+
+    &__text {
+        font-size: 1em;
+        font-family: $ff-para;
+        margin: 0 auto $spacer*2;
+        max-width: 500px;
+    }
+}
+
+.beans__4 {
+    width: 4em;
+}
